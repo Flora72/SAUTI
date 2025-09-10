@@ -1,6 +1,15 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
+    margin: 0; 
+}
+
+nav {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -12,8 +21,22 @@ nav ul {
     margin: 0;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: #333; 
+    color: #333;
     font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
 }
