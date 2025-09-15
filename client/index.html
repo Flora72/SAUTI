@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sauti — A Sanctuary for Survivor Voice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!--   css styling-->
+    <link rel="stylesheet" href="/landing.css" />
+  </head>
+  <body>
+<!--    navbar-->
+    <header class="site-header">
+      <div class="container row between">
+        <a class="brand" href="/">Sauti</a>
+        <nav class="nav">
+          <a href="/journal">Journaling</a>
+          <a href="/audio">Audio</a>
+          <a href="/affirmations">Affirmations</a>
+          <a href="/community">Community</a>
+          <a class="pill" href="/safety">Safety</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container">
+        <h1>Soft space. Steady breath.</h1>
+        <p class="lead">Sauti is a trauma‑informed sanctuary for journaling, audio reflections, and gentle community. Your pace, your privacy, your voice.</p>
+        <div class="cta">
+          <a class="btn primary" href="/safety">Enter softly</a>
+          <a class="btn" href="/affirmations">Read affirmations</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- React SPA mounts here; routes like /journal, /audio, ... -->
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
