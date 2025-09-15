@@ -1,0 +1,19 @@
+{
+  "name": "sauti",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "server": "npm run dev -w server",
+    "client": "npm run dev -w client",
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm:server\" \"npm:client\"",
+    "start": "concurrently -n server,client -c cyan,magenta \"npm run start -w server\" \"npm run preview -w client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
