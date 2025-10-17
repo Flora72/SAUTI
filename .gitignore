@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# OS-specific
+.DS_Store
+
+# Optional: build artifacts
+dist/
+build/
+
+# Optional: IDE settings
+.vscode/
+.idea/
