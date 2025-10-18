@@ -12,10 +12,10 @@ npm-debug.log*
 # OS-specific
 .DS_Store
 
-# Optional: build artifacts
+# build artifacts
 dist/
 build/
 
-# Optional: IDE settings
+# IDE settings
 .vscode/
 .idea/
