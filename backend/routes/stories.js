@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Story = require('../models/story');
 
-// POST a new story
+// To POST a new story
 router.post('/', async (req, res) => {
   try {
     const story = new Story(req.body);
