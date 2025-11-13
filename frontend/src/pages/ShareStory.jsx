@@ -7,19 +7,20 @@ export default function ShareStory() {
     <div className="min-h-screen bg-base-200 text-base-content">
       <Navbar />
 
-     {/* Hero Banner */}
-<section className="relative bg-purple-900 text-base-100 py-20">
-  <div className="max-w-4xl mx-auto text-center space-y-6 px-6">
-    <h1 className="text-5xl font-extrabold tracking-tight drop-shadow-lg">
-      Share Your Story
-    </h1>
-    <p className="text-lg leading-relaxed max-w-2xl mx-auto text-base-100/90">
-      SAUTI is more than a portal it’s a heartbeat. Here, your voice becomes part of a chorus
-      of resilience, joy, and transformation. Every word you write is a spark that lights the
-      path for others.
-    </p>
-  </div>
-</section>
+      {/* Hero Banner */}
+      <section className="relative py-20">
+        <div className="max-w-4xl mx-auto text-center space-y-6 px-6">
+          <h1 className="text-5xl font-extrabold tracking-tight drop-shadow-lg">
+            Share Your Story
+          </h1>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto">
+            SAUTI is more than a portal it’s a heartbeat. Here, your voice becomes part of a chorus
+            of resilience, joy, and transformation. Every word you write is a spark that lights the
+            path for others.
+          </p>
+        </div>
+      </section>
+
 
 
       {/* Form Section */}
