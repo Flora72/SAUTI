@@ -21,7 +21,6 @@ export default function Home() {
               gender-based violence, and anyone who has been shunned or unheard. Here, your story is honored,
               your voice is amplified, and your dignity is reclaimed.
             </p>
-            <button className="btn btn-primary btn-wide">Share Your Story</button>
           </div>
         </div>
       </section>
@@ -34,9 +33,7 @@ export default function Home() {
             SAUTI is a safe space for survivors of sexual abuse, gender-based violence, and anyone who has felt unheard.
             This is where silence ends and healing begins.
           </p>
-          <div className="mt-6">
-            <a href="/share" className="btn btn-primary btn-wide bg-white border-primary "> Share Your Story</a>
-          </div>
+         <button className="btn btn-primary btn-wide">Share Your Story</button>
         </div>
       </section>
 
