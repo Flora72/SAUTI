@@ -1,4 +1,7 @@
 import heroImage from '../assets/hero.png'
+import gallery1 from '../assets/gallery1.png'
+import gallery2 from '../assets/gallery2.png'
+import gallery3 from '../assets/gallery3.png'
 import Navbar from '../components/Navbar'
 
 export default function Home() {
@@ -44,18 +47,15 @@ export default function Home() {
       <section className="py-12 px-6 bg-base-200">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <img
-            src="https://static.globalissues.org/ips/2024/07/FGM.png"
-            alt="Kenyan woman reflecting after surviving trauma"
+            src={gallery1}
             className="rounded-lg shadow-md transition duration-300 hover:scale-105"
           />
           <img
-            src="https://hamsahealingspace.com/wp-content/uploads/2024/08/Female-Survivors-of-Sexual-Trauma-Online-Support-Group-at-Hamsa-Healing-Space.png"
-            alt="Kenyan women in a trauma-informed support group"
+            src={gallery2}
             className="rounded-lg shadow-md transition duration-300 hover:scale-105"
           />
           <img
-            src="https://www.myeyestokyo.com/wp-content/uploads/2018/12/1031px-Kenyan_Women_in_Nairobi_01.jpg"
-            alt="Kenyan women standing together in Nairobi"
+            src={gallery3}
             className="rounded-lg shadow-md transition duration-300 hover:scale-105"
           />
         </div>
