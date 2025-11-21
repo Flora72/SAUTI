@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,8 +17,15 @@ function Login() {
       return;
     }
 
+    // Simulate login success (replace with API call later)
     console.log('Logging in with:', { email, password });
     setError('');
+    setSuccess('Login successful! Redirecting...');
+
+    // Redirect after 2 seconds
+    setTimeout(() => {
+      navigate('/dashboard'); 
+    }, 2000);
   };
 
   return (
@@ -27,6 +38,10 @@ function Login() {
 
         {error && (
           <p className="text-error text-sm text-center">{error}</p>
+        )}
+
+        {success && (
+          <p className="text-success text-sm text-center">{success}</p>
         )}
 
         <div className="form-control">
