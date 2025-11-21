@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 
 function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
+  const navigate = useNavigate(); 
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -14,8 +17,14 @@ function SignUp() {
       return;
     }
 
+    // Simulate signup success 
     console.log('Signing up with:', { email, password });
     setError('');
+    setSuccess('Account created successfully! Redirecting to login...');
+
+    setTimeout(() => {
+      navigate('/login');
+    }, 2000);
   };
 
   return (
@@ -28,6 +37,10 @@ function SignUp() {
 
         {error && (
           <p className="text-error text-sm text-center">{error}</p>
+        )}
+
+        {success && (
+          <p className="text-success text-sm text-center">{success}</p>
         )}
 
         <div className="form-control">
