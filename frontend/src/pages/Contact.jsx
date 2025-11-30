@@ -63,8 +63,7 @@ export default function Contact() {
         </form>
 
         {/* Note */}
-        <p className="text-sm text-center italic text-base-content/70">
-          We’ll get back to you as soon as we can. Thank you for reaching out.
+        <p className="text-sm text-center italic text-base-content/70">Thank you for reaching out. We’ll get back to you as soon as we can.
         </p>
       </div>
     </div>
